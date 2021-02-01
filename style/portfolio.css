@@ -26,7 +26,7 @@ header {
     justify-content: flex-end;
     align-items: center;
     padding: 1.5rem;
-    background: linear-gradient(9deg, rgba(50, 120, 218, 1) 0%, rgba(68, 65, 123, 1) 29%, rgba(89, 2, 16, 1) 61%, rgba(250, 192, 9, 1) 100%);
+    background: linear-gradient(9deg, #3278da 0%, #44417b 29%, #590210 61%, #fac009 100%);
 }
 
 nav {
@@ -104,7 +104,7 @@ nav li {
 }
 
 .show-menu .close-btn {
-    animation: show-x 1s 1s forwards;
+    animation: show-x 1s forwards;
 }
 
 .show-menu li {
@@ -137,6 +137,15 @@ nav li {
     }
     to {
         transform: scaleX(1);
+    }
+}
+
+@keyframes show-x {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
     }
 }
 
